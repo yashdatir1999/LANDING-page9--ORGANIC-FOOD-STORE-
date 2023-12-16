@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    background-color: lightsalmon;
+    background-image: url(https://i.pinimg.com/564x/b9/24/eb/b924eb77f9b448c9a56f6e81f7f114f9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.over{
+    background-color: rgba(0, 0, 0, 0.297);
+    backdrop-filter: blur(1vmax);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+   
+}
+nav{
+    height: 10vh;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.364); */
+    padding: 0 5vmax;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: space-between;
+}
+nav >ul{
+    display: flex;
+    align-items: center;
+    gap: 3vmax;
+    list-style: none;
+    font-weight: 700;
+    /* padding-top: 3.5vh; */
+    color: whitesmoke;
+}
+nav >h1{
+    font-size: 2.5vmax;
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+    user-select: none;
+}
+nav >ul >button{
+    padding-right: 0.5vmax;
+    padding: 0.5vmax 1vmax;
+    border-radius: 3vmax;
+    border: none;
+    font-weight: 700;
+}
+.page1-contener{
+    user-select: none;
+    height: 70vh;
+    width: 100%;
+    /* background-color: lightslategrey; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.page1-contener >h1{
+    margin-top: 4vh;
+    font-size: 5vmax;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 100;
+    text-shadow:  0 0 2vmax white;
+}
+.page1-contener >h1 >span{
+    
+    color: whitesmoke;
+
+}
+.page1-contener >p{
+    margin-top: 3vh;
+    /* background-color: yellow; */
+    font-family: cursive;
+    width: 60%;
+    line-height: 1.5vmax;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5vmax;
+}
+.page1-contener >button{
+    margin-top: 3vh;
+    padding: 1vmax 2vmax;
+    border: none;
+    background-color: transparent;
+    border-radius: 3vmax;
+    outline: 0.2vmax solid whitesmoke;
+    font-weight: 700;
+    color: whitesmoke;
+}
+.page1-contener >button:active{
+    scale: 0.9;
+}
+.blank{
+    height: 32vh;
+    width: 100%;
+    background-color:whitesmoke;
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0 32%, 100% 0, 100% 100%, 0% 100%);
+}
+.image{
+    height: 52vh;
+    width: 40%;
+    /* background-color: red; */
+    position: absolute;
+    filter: drop-shadow(0 0 5vmax black);
+    z-index: 2;
+    top: 42%;
+    transform: scale(1.2);
+    left: 30%;
+    background-image: url(./fruts.png);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
